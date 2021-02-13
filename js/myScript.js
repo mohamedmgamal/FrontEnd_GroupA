@@ -36,6 +36,7 @@ function validation(){
             }
      return true;
 }
+
 function onload(){
     if (localStorage.getItem("UserName")&&localStorage.getItem("Password"))
         alert("Signing in")
@@ -77,3 +78,4 @@ function signInValidation(){
     alert("Signing in")
     return true
 }
+
