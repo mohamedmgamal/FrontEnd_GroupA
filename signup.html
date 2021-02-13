@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sign Up </title>
     <link rel="stylesheet" href="css/signup.css"></link>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"></link> -->
 </head>
 <body>
 
@@ -13,20 +14,23 @@
            
             <div class="container">
                 <div class="signup-content">
-                    <form  class="signup-form">
+                    <div id="errors">
+
+                    </div>
+                    <form  class="signup-form" action="login.php" method="POST" onsubmit="return validation()">
                         <h2 class="form-title">Create account</h2>
                         <div >
-                            <input type="text"  placeholder="Your Name"/>
+                            <input type="text"  id="User"  placeholder="Your Name"/>
                         </div>
                         <div >
-                            <input type="email"  placeholder="Your Email"/>
+                            <input type="email"  id="email" placeholder="Your Email"/>
                         </div>
                         <div >
-                            <input type="password"  placeholder="Password"/>
+                            <input type="password"   id="pass" placeholder="Password"/>
                           
                         </div>
                         <div >
-                            <input type="password" placeholder="Repeat your password"/>
+                            <input type="password"   id="pass" placeholder="Repeat your password"/>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" /> I agree all statements in   <a href="#" class="term-service">Terms of service</a>
@@ -45,6 +49,6 @@
 
     </div>
 
-   
+    <script src="js/myScript.js"></script>
 </body>
 </html>
