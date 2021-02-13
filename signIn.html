@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SignIn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
 </head>
-<body>
-
+<body onload="onload()">
+<div class="row">
+<div class="col-md-8" id="leftSignIn">
+    <img src="https://blog.matcharesident.com/wp-content/uploads/2019/07/iStock-944453634.jpg" class="img-fluid">
+</div>
+<div class="col-md-4" id="signDiv">
+    <form action="#" method="post" onsubmit=" return signInValidation()">
+        <h3>Sign In</h3>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted" style="display: none">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" id="signInPassword1" placeholder="Password">
+            <small id="passwordHelp" class="form-text text-muted" style="display: none">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMeCheckBox">
+            <label class="form-check-label" >Remember me </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div></div>
+<script src="js/myScript.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

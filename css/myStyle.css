@@ -1,1 +1,11 @@
-
+#signDiv{
+    height: 100%;
+    padding: 2%;
+}
+#leftSignIn{
+    height: 100%;
+    background: aquamarine;
+}
+#signDiv form{
+    margin: 2%;
+}
