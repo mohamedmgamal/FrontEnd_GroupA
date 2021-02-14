@@ -1,4 +1,5 @@
 function validation(){
+
     var usr =document.getElementById("User");
     var pass =document.getElementById("pass");
     var mail =document.getElementById("email");
@@ -30,11 +31,15 @@ function validation(){
         document.getElementById("errors").innerHTML="Your password should Greater than 8 letters";
         return false;
             }
-    if(mail.value.match(mailformat))  {
+    if(mail.value=="")  {
         document.getElementById("errors").innerHTML="You should Enter valid Email ";
         return false;
-            }
-     return true;
+    }
+    // if(mail.value.match(mailformat))  {
+    //     document.getElementById("errors").innerHTML="You should Enter valid Email ";
+    //     return false;
+    //         }
+    alert("new user added")
 }
 function onload(){
     if (localStorage.getItem("UserName")&&localStorage.getItem("Password"))
