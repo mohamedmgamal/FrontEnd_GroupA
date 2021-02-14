@@ -36,7 +36,6 @@ function validation(){
             }
      return true;
 }
-
 function onload(){
     if (localStorage.getItem("UserName")&&localStorage.getItem("Password"))
         alert("Signing in")
