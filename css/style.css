@@ -1,0 +1,227 @@
+body
+{
+    padding-top:50px;
+}
+.navbar
+{
+    background-color: white;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.navbar-default .navbar-nav > li > a
+{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 17px;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+    background-color: #08ec41ea;
+    color: white;
+}
+.navbar-right
+{
+    margin-right: 1%;
+    margin-top: 9px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #08ec41ea;
+    color: white;
+    font-weight: bold;
+    width: 110px;
+}
+.navbar-right:hover
+{
+    color: white;
+    background-color: #08ec41ea;
+}
+.pic
+{
+    background-image: url('../img/10.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:600px;
+}
+.pic .topic1 .container 
+{
+    padding-top: 6%;
+    padding-left: 46%;
+    opacity: 1;
+}
+.pic .topic1 .container h1
+{
+    color:#04c935;
+    font-size: 50px;
+    font-weight: bold;
+}
+.pic .topic1 .container p
+{
+    color:rgb(142, 219, 27);
+    font-size: 22px;
+    line-height: 1.5em;
+}
+.pic .topic1 .container button
+{
+    margin-left: 2%;
+    margin-top: 12px;
+    width: 170px;
+}
+.devices
+{
+    margin-top: 150px;
+}
+.devices h2
+{
+    color:black ;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.devices p
+{
+    color: rgba(0, 0, 0, 0.774);
+    line-height: 1.5em;
+    margin-top: 30px;
+    font-size: 20px;
+}
+hr
+{
+    width:40px;
+    background-color: #04c935;
+    border: 3px solid #04c935;
+    border-radius: 10px;
+    margin-left: 172px;
+}
+.devices button
+{
+    width: 120px;
+    font-size: 16px;
+}
+.playlist hr
+{
+    margin-left: 156px;
+}
+.hd hr
+{
+    margin-left: 202px; 
+}
+.hr1
+{
+    border: .1px solid #ddd;
+    background-color: #ddd;
+    width:auto;
+    margin-left: 0;
+    margin-top: 130px;
+}
+.price 
+{
+    background-color: rgba(238, 238, 238, 0.404);
+    padding-top: 66px;
+    padding-bottom: 40px;
+    margin-top: 120px;
+    height: 860px;
+}
+.price h1
+{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+.hr2
+{
+    margin-left: 550px;
+    margin-bottom: 55px;
+}
+i
+{
+    color: #04c935;
+    padding-right: 5px;
+}
+.tx1
+{
+    text-align: left;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+.price .pr1
+{
+    background-color: white;
+    padding: 10px;
+    border: 0px hidden;
+    padding-top: 40px;
+    height: 475px;
+}
+.price .pr1 button
+{
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: .1px solid #DDD;
+    width: 150px;
+    font-weight: 800;
+    height: 40px;
+    margin-bottom: 25px;
+}
+.price .pr1 button:hover
+{
+    background-color:#04c935;
+    color: white;
+}
+.price .pr1 h1
+{
+    color: #04c935;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.price .pr1 h1 i
+{
+    font-size: 35px;
+    color: rgb(180, 179, 179);
+    padding:0;
+    margin:0 ;
+}
+.price .pr1 h1 .mth
+{
+    font-size: 20px;
+}
+.price .pr1 p
+{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.price .pr1 .btn1, .btn-success
+{
+    margin-top: 40px;
+}
+.price .pr1 .btn-success
+{
+    background-color: #04c935;
+    border: hidden;
+    color: white;
+}
+.ft1
+{
+    margin-top: 20px;
+    text-align: right;
+}
+.ft1 .container span
+{
+    float: left;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.ft1 .container i
+{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.fa-check{
+    color: #04c935;
+}
