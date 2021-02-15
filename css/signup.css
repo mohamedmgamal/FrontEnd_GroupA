@@ -6,7 +6,68 @@
     
     
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    border:1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.logo h2{
+    color:#242424;
+    
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#585858;
+    letter-spacing: 1px;
+}
 
+nav .menu li a:hover{
+    background-color: #04c935;
+    color:#ffffff;
+    box-shadow: 5px 10px 30px rgba(163, 107, 107, 0.1);
+    transition: all ease 0.2s;
+    
+}
+.sign_btn{
+    margin-right: 1%;
+    margin-top: 9px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #04c935;
+    color: white;
+    font-weight: bold;
+    width: 110px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .main{
     max-width: 400px;
     border-radius: 20px;
@@ -18,13 +79,14 @@
     margin-top: 100px;
     text-align: center;
 }
-h2{
+.main h2{
    
  font-family: 'Montserrat';
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
+  
 }
 input[type=text],input[type=password],input[type=email] {
     width: 90%;
@@ -93,10 +155,88 @@ input[type=submit]:hover{
    color: red;
   
 }
-@media screen and (max-width: 768px) {
-    .container {
-      width: calc(100% - 40px);
-      max-width: 100%; } }
-  @media screen and (max-width: 480px) {
-    .containert {
-      padding: 70px 50px; } }
+
+
+@media(max-width:700px){
+    nav{
+        justify-content: space-between;
+        height: 70px;
+        padding: 0px 10px;
+    }
+    nav .menu{
+       display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background: #fff;
+        border-bottom:4px solid #242424;
+        width:100%;
+        padding:0px;
+        margin:0px;
+    }
+    .menu li{
+        width:100%;
+    }
+    nav .menu li a{
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        margin: 0px;
+        padding:25px;
+        border:1px solid rgba(38,38,38,0.03);
+    }
+ 
+    nav .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding:28px 20px;
+        position: relative;
+        user-select: none;
+        display: block;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position: relative;
+       
+        width: 18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: #333333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top:5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top:-5px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+ 
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu{
+        display: block;
+    }
+    .banner{
+        padding: 100px 50px;
+    }}
+      
