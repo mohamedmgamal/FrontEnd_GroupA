@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/all.min.css"> 
+        <link rel="stylesheet" href="css/accstyle.css"> 
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">SKRN </a>
+                </div>
+                <form class="navbar-form" role="search">
+                    <div class="form-group fo1">
+                        <i class="fas fa-search fa-lg search" aria-hidden="true"></i> 
+                        <input type="text" class="form-control" placeholder="Search For Movies Or TV Series">
+                    </div>
+                    <div class="navbar-right">
+                        <i class="far fa-bell fa-lg"></i> 
+                        <img class="img-responsive center-block img-circle" src="img/user.jpg">
+                        <span>UserName</span>
+                        <i class="fas fa-chevron-down down"></i>
+                    </div>
+                </form>
+            </div>     
+        </nav>
+        <div class="container links">
+            <ul class="nav navbar-nav list-unstyled ">
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Payment Information</a></li>
+            </ul>
+        </div>
+        <hr>
+        <aside>
+            <div id="container">
+                <video autoplay="true" id="videoElement"></video>
+                <button class="btn btn-success" onclick="takescreenshot();">Change Your Profile Picture</button>
+                <button class="btn del" onclick="stop();">Delete</button>
+                <canvas id="showscreenshot" ></canvas>
+                <img id="showscreenshotimg"/>
+            </div>
+        </aside>
+        <section class="ginfo">
+                <div class="container">
+                    <h1>General Information</h1>
+                    <p class="lead">By letting us know your name, we can make our support experience much more personal.</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form1">
+                                <label>First Name:</label>
+                                <input type="text" class="form-control">                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form1 fl">
+                                <label>Last Name:</label>
+                                <input type="text" class="form-control ">                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form1 fc">
+                                <label>Country:</label>
+                                <select class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option value="1">Egypt</option>
+                                    <option value="2">United States</option>
+                                    <option value="3">China</option>
+                                </select>                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="fhr">
+        <section class="ainfo">
+            <div class="container">
+                <h1>Account Information</h1>
+                <p class="lead">You can change the email address you use here.</p>
+                <div class="row">
+                    <div class="col-lg-4">
+                            <div class="form2 form-group">
+                                <label>Email address</label>
+                                <input type="email" class="form-control" placeholder="Enter Your Email" required>
+                            </div>                  
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form2 form-group">
+                                <button type="button" class="btn">Change Email</button>
+                            </div>                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="fhr">
+    <section class="pinfo">
+        <div class="container">
+                <h1>Change Password</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec tortor dolor.</p>
+                <button type="button" class="btn btn2 navbar-right">Change</button>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form3 form-group">
+                        <label>Current Password:</label>
+                        <input type="password" class="form-control" required>                   
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form3 form-group fp1">
+                        <label>New Password:</label>
+                        <input type="password" class="form-control" placeholder="Minimum of 6 characters" required>                   
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form3 form-group fp2">
+                        <input type="password" class="form-control" placeholder="Confirm New Password" required>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="fhr">
+    <section class="pg">
+        <div class="container">
+                <h1>Preferred Genres</h1>
+                <p class="lead">Pick your top 4 preferred genres.</p>
+            <div class="row">
+                <div class="col-lg-1">
+                    <div class="imgs img1"> 
+                        <img class="img-responsive center-block img-circle" src="img/drama.jpg">
+                        <small>Drama</small>                
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img2"> 
+                        <img class="img-responsive center-block img-circle" src="img/comedy.jpg">
+                        <small>Comedy</small>                  
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img3"> 
+                        <img class="img-responsive center-block img-circle" src="img/action.jpg">  
+                        <small>Action</small>                 
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img4"> 
+                        <img class="img-responsive center-block img-circle" src="img/romance3.jpg">
+                        <small>Romance</small>                   
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img5"> 
+                        <img class="img-responsive center-block img-circle" src="img/horror.jpg"> 
+                        <small>Horror</small>                  
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img6"> 
+                        <img class="img-responsive center-block img-circle" src="img/fantacy.jpg">
+                        <small>Fantacy</small>                   
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img7"> 
+                        <img class="img-responsive center-block img-circle" src="img/sci.jpg">
+                        <small>sci-Fi</small>                   
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img8"> 
+                        <img class="img-responsive center-block img-circle" src="img/thriller.jpg">
+                        <small>Thriller</small>                   
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img9"> 
+                        <img class="img-responsive center-block img-circle" src="img/western.jpg">
+                        <small>Western</small>                   
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img10"> 
+                        <img class="img-responsive center-block img-circle" src="img/adventure.jpg"> 
+                        <small>Adventure</small>                  
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img11"> 
+                        <img class="img-responsive center-block img-circle" src="img/animation.jpg"> 
+                        <small>Animation</small>                  
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="imgs img12"> 
+                        <img class="img-responsive center-block img-circle" src="img/documentary3.jpg"> 
+                        <small>Documentary</small>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="fhr">
+    <button type="button" class="btn btn-success btn3">Save Changes</button>
+
+
+
+
+        <script>
+            var video = document.querySelector("#videoElement");
+            var canvas = document.querySelector("#showscreenshot");
+            var img = document.querySelector("#showscreenshotimg");
+    
+            async function startCamera(){
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    let str = await navigator.mediaDevices.getUserMedia({ video: true, audio:false },)
+                    video.srcObject = str;
+                }
+            }
+    
+            startCamera();
+    
+    
+            function stop(e) {
+            
+            var stream = video.srcObject;
+            var tracks = stream.getTracks();
+    
+            for (var i = 0; i < tracks.length; i++) {
+                var track = tracks[i];
+                track.stop();
+            }
+    
+            video.srcObject = null;
+            }
+            
+            
+            function takescreenshot () {
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                let ctx = canvas.getContext("2d");
+                
+                ctx.drawImage(video, 0, 0);
+                // Other browsers will fall back to image/png
+                img.src = canvas.toDataURL("image/webp");
+            };
+        </script>
+        <script src="js/all.min.js"></script>
+        <script src="jquerylib/jquery-3.5.1.min.js" ></script>
+        <script src="js/jquery.nicescroll.min.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
