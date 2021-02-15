@@ -40,6 +40,7 @@ function validation(){
     //     return false;
     //         }
     alert("new user added")
+    return true
 }
 function onload(){
     if (localStorage.getItem("UserName")&&localStorage.getItem("Password"))
