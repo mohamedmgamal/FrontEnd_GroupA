@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/video_view_style.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+</head>
+<body ><div class="container-fluid">
+<div id="videoContainer" class="col-md-12">
+    <div id="overlay" ></div>
+    <video id="myVideo" class="col-md-12" onclick="playPause()" autobuffer autoplay>
+        unavailable video
+        <source src="img/mulan.mp4" type="video/mp4">
+    </video><br>
+    <div id="videoPlayer" class="col-md-12 ">
+        <img id="startPause" class="playerPtns img-fluid" src="img/ic_play_circle_filled_white_48px-512.png" onclick="playPause()">
+        <img class="playerPtns" src="img/stop-icon-18-256.png" onclick="stopp()">
+        <input type="range" style="position:absolute;top: 91%;left: 3%;display: none"id="input-range"min="0" max="1"step=".1">
+        <img id="volumeBtn" class="playerPtns" src="img/volume-up-4-xxl.png" >
+        <progress style="width: 70%" id="progressPar" max="100" value="0"></progress>
+        <img class="playerPtns" src="img/rewind-icon-18-256.png"onclick="backwordd()">
+        <img class="playerPtns" src="img/fast-forward-icon-18-256.png"onclick="fowroadd()">
+        <img class="playerPtns" src="img/share.jpg"onclick="">
+        <select id="selector"  onchange="speedChanged(this)">
+            <option value=".5">x.5</option>
+            <option selected value="1">x1</option>
+            <option value="1.5">x1.5</option>
+            <option value="2">x2</option></select>
+        <img class="playerPtns" src="img/fullscreen_white_192x192.png" onclick="fullScreen()">
+    </div>
+</div>
+<div class="col-md-12" style="padding-top: 1%">
+   <h1 id="videoTitle" >Mulan 2020</h1>
+    <p><h3>Description : </h3>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+<button type="button" class="btn btn-danger disabled" id="editButton">Edit</button>
+    <button type="button" class="btn btn-success " id="RateEdit">Rate</button>
+</div>
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-1.jpg">
+                </a>
+
+            </div>
+            <!--text--------->
+            <div class="link">
+                Star Trek Into Darkness (2013)  HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-2------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+
+                <a href="#">
+                    <img src="img/l-2.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                Fantastic Beasts (2018)  <br>
+                HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-3------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-3.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                Croods (2018) <br> HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-4------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-4.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                Toy Story 3 (2017) <br> HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-5------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-5.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                COCO (2019) <br> HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-6------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-6.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                The rise of skywalker (2020) <br> HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-7------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-7.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                ROGUE ONE (2020)<br> HDRip 1080p HD
+            </div>
+        </div>
+        <!--box-8------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <a href="#">
+                    <img src="img/l-8.jpg">
+                </a>
+            </div>
+            <!--text--------->
+            <div class="link">
+                Veniom (2019) <br> HDRip 1080p HD
+            </div>
+        </div>
+
+    </section>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/video_view_script.js"></script>
+</body>
+</html>
