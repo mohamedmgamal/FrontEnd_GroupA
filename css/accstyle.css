@@ -1,0 +1,319 @@
+.navbar
+{
+    background-color: white;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding-top: 33px;
+    margin-right: 27px;
+}
+.fo1
+{
+    position: relative;
+    margin-top: 13px;
+}
+.search
+{
+    color: #04ca35ea;
+    margin-top: 11px;
+    position: absolute;
+    left: 13px;
+    cursor: pointer;
+}
+.navbar .container form .form-control
+{
+    width: 340px;
+    height: 40px;
+    border: .1px hidden white;
+    font-size: 17px;
+    font-family: cursive;
+    padding-left: 45px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.navbar .container .navbar-right
+{
+    display: inline-flex;
+    cursor: pointer;
+}
+.navbar .container .navbar-right .fa-lg
+{
+    margin-right: 35px;
+    color:#04ca35ea;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.navbar .container .navbar-right img
+{
+    width: 40px;
+    height: 30px;
+    margin-top: 16px;
+}
+.navbar .container .navbar-right span
+{
+    margin-left: 10px;
+    margin-top: 23px;
+    font-family: cursive;
+}
+.navbar .container .navbar-right .down
+{
+    margin-top: 28px;
+    color:#04ca35ea;
+    margin-left: 10px;
+}
+.links
+{
+    margin-left: 200px;
+}
+.navbar-nav > li > a 
+{
+
+    font-size: 18px;
+    font-family:cursive;
+    color: black;
+    font-weight: bold;
+}
+.navbar-nav > li > a:hover
+{
+    background-color:white;
+}
+.navbar-nav > li > a:active
+{
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    border-radius: 50px;
+}
+hr
+{
+    margin-top: 2px;
+    width:143px;
+    background-color: #04ca36d8;
+    border: 3px solid #04ca36d8;
+    margin-left: 230px;
+}
+aside
+{
+    width: 30%;
+    height: 412px;
+    float: left;
+}
+#container 
+{           
+    margin-top: 30px;
+    width: 280px;
+    height:500px;
+    border:0px hidden;
+}
+#videoElement 
+{
+    width: 280px;
+    height: 270px;
+    margin-left: 140px;
+    background-image: url(../img/screen.jpg);
+    border-radius: 150px;
+}
+button
+{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 170px;
+    width: 240px;
+    height: 45px;
+    font-family: cursive;  
+}
+.del
+{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 230px;
+    color:#07681fd7;
+    font-weight: bold;
+}
+.ginfo
+{
+    overflow: hidden;
+    margin-top: 47px;
+}
+.ginfo .container h1
+{
+    font-family: cursive;
+    font-size: 27px;
+    font-weight: bold;
+    color: black;   
+}
+.ginfo .container p , .ainfo .container p , .pinfo .container p , .pg .container p
+{
+    font-size: 17px;
+    font-family:initial;
+}
+.ginfo .container .form1 , .ainfo .container .form2 , .pinfo .container .form3
+{
+    width: 300px;
+    font-family:cursive;
+    margin-top: 20px;
+}
+.ginfo .container .form-control input [type="text"], select , .ainfo .container .form-control input [type="email"]
+, .ainfo .container .form2 .btn , .pinfo .container .form-control input [type="password"]
+{
+  border: 1px solid rgba(235, 231, 231, 0.5);
+}
+.ginfo .container .fl
+{
+    margin-left: -70px;
+}
+.ginfo .container .fc
+{
+    margin-left: -140px;
+}
+.fhr
+{
+    margin-top: 50px;
+    width:940px;
+    background-color: #ddd;
+    border: .3px solid #ddd;
+    margin-left: 475px;
+}
+.ainfo .container
+{
+    margin-top: 20px;
+}
+.ainfo .container h1 , .pinfo .container h1 , .pg .container h1
+{
+    font-family: cursive;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    margin-left: 272px;
+}
+.ainfo .container p , .pinfo .container p 
+{
+    margin-left: 272px;
+}
+.ainfo .container .form2
+{
+    margin-left: -3px;
+}
+.ainfo .container .form2 .btn
+{
+    width: 150px;
+    height: 35px;
+    color: #07681fd7;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: -66px;
+}
+.pinfo .container .btn2
+{
+    margin-top: -7%;
+    margin-right: -70px;
+    width: 100px;
+    height: 40px;
+    color: #07681fd7;
+    font-weight: bold;
+}
+.pinfo .container .form3
+{
+    margin-left: 272px;
+}
+.pinfo .container .fp1
+{
+    margin-left: 200px;
+}
+.pinfo .container .fp2
+{
+    margin-left: 130px;
+    margin-top: 45px;
+}
+.fhr
+{
+    margin-top: 50px;
+    width:940px;
+    background-color: #ddd;
+    border: .3px solid #ddd;
+    margin-left: 475px;
+}
+.pg .container h1 , .pg .container p
+{
+    margin-left: 276px;
+}
+.pg .container .imgs
+{
+    width: 50px;
+}
+.pg .container .img1
+{
+    margin-left: 270px;
+    margin-top: 27px;
+}
+.pg .container .img2 
+{
+    margin-left: 245px;
+    margin-top: 28px;
+}
+.pg .container .img3
+{
+    margin-left: 225px;
+    margin-top: 27px;
+}
+.pg .container .img4
+{
+    margin-left: 200px;
+    margin-top: 27px;
+}
+.pg .container .img5
+{
+    margin-left: 180px;
+    margin-top: 27px;
+}
+.pg .container .img6
+{
+    margin-left: 153px;
+    margin-top: 27px;
+}
+.pg .container .img7
+{
+    margin-left: 130px;
+    margin-top: 27px;
+}
+.pg .container .img8
+{
+    margin-left: 108px;
+    margin-top: 27px;
+}
+.pg .container .img9
+{
+    margin-left: 90px;
+    margin-top: 27px;
+}
+.pg .container .img10
+{
+    margin-left: 70px;
+    margin-top: 27px;
+}
+.pg .container .img11
+{
+    margin-left: 55px;
+    margin-top: 25px;
+}
+.pg .container .img12
+{
+    margin-left: 40px;
+    margin-top: 26px;
+}
+.pg .container small
+{
+    font-weight: bold;
+    font-family: cursive;
+}
+.btn3
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 165px;
+    margin-left: 482px;
+    font-weight: bold;
+}
