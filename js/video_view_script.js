@@ -29,11 +29,9 @@ document.getElementById("progressPar").addEventListener("click",function (e){
 })
 function  fowroadd(){
     myVideo.currentTime+=1;
-    myVideo.pause();
 }
 function  backwordd(){
     myVideo.currentTime-=1;
-    myVideo.pause();
 }
 function speedChanged(selector){
     myVideo.playbackRate =selector.value;
