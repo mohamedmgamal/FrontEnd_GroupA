@@ -1,0 +1,14 @@
+select::-ms-expand {
+    display: none;
+}
+small{
+    display: none;
+}
+label{
+    margin-top: 1%;
+}
+.container form button{
+    padding-right: 2%;
+    padding-left: 2%;
+    float: right;
+}
