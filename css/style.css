@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body
 {
     padding-top:50px;
 }
+
 .navbar
 {
     background-color: white;
@@ -15,12 +17,16 @@ body
 .navbar-default .navbar-nav > li > a
 {
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'poppins';
     padding-top: 17px;
+   
+}
+.list-unstyled{
+    margin-left: 15%;
 }
 .navbar-default .navbar-nav > li > a:hover
 {
-    background-color: #08ec41ea;
+    background-color: #04c935;
     color: white;
 }
 .navbar-right
@@ -28,8 +34,8 @@ body
     margin-right: 1%;
     margin-top: 9px;
     font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #08ec41ea;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #04c935;
     color: white;
     font-weight: bold;
     width: 110px;
@@ -37,14 +43,14 @@ body
 .navbar-right:hover
 {
     color: white;
-    background-color: #08ec41ea;
+    background-color: #04c935;
 }
 .pic
 {
     background-image: url('../img/10.jpg');
     background-size:cover;
     background-repeat: no-repeat;
-    height:600px;
+    height:705px;
 }
 .pic .topic1 .container 
 {
@@ -60,7 +66,7 @@ body
 }
 .pic .topic1 .container p
 {
-    color:rgb(142, 219, 27);
+    color:white;
     font-size: 22px;
     line-height: 1.5em;
 }
@@ -123,6 +129,7 @@ hr
     padding-bottom: 40px;
     margin-top: 120px;
     height: 860px;
+    font-family: 'poppins';
 }
 .price h1
 {
@@ -166,6 +173,7 @@ i
     font-weight: 800;
     height: 40px;
     margin-bottom: 25px;
+    transition: .5s ;
 }
 .price .pr1 button:hover
 {
@@ -199,6 +207,12 @@ i
 .price .pr1 .btn1, .btn-success
 {
     margin-top: 40px;
+    padding: 10px;
+    border: none;
+    
+}
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .price .pr1 .btn-success
 {
