@@ -1,4 +1,5 @@
 function validation(){
+    document.getElementById("errors").innerText="";
     var usr =document.getElementById("User");
     var pass =document.getElementById("pass");
     var re_pass =document.getElementById("re-pass");
@@ -67,7 +68,7 @@ function validation(){
     //      document.getElementById("errors").innerHTML="You should Enter valid Email ";
     //      return false;
     //          }
-     addToServer(usr,pass);
+     addToServer(usr.value,pass.value);
 }
 function onload(){
     if (localStorage.getItem("UserName")&&localStorage.getItem("Password"))
@@ -111,9 +112,8 @@ function signInValidation(){
 }
 async function addToServer(usr,pass){
     var user =
-        {"username":toString(usr), "password":toString(pass)};
-
-    var requestOptions = {
+        {"username":usr, "password":pass};
+        var requestOptions = {
         method: 'POST',
         headers:{
             "Access-Control-Allow-Origin": "*",
@@ -128,20 +128,20 @@ async function addToServer(usr,pass){
         .then(data => {
             if (data.token){
                 console.log("success login token : "+data.token)
-                open("signIn.html","_self")
+               open("signIn.html","_self")
+                console.log({data})
             }
             else if (data.error){
-                //alert(data.error)
+                console.log({data})
                 document.getElementById("errors").innerText=data.error;
             }
         })
         .catch(error => console.error('error', error));
 
 }
-async function signIn(usr,pass){
+async function signIn(userName,password){
     var user =
-        {"username":toString(usr), "password":toString(pass)};
-
+        {"username":userName, "password":password};
     var requestOptions = {
         method: 'POST',
         headers:{
@@ -156,11 +156,13 @@ async function signIn(usr,pass){
         .then(response => response.json())
         .then(data => {
             if (data.token){
-                //console.log({data})
+                console.log({data})
                 localStorage.setItem("token",data.token)
-                open("mainpage.html","_self")
+               open("mainpage.html","_self")
             }
             else if (data.error){
+                console.log(data.error)
+                document.getElementById("passwordHelp").style.display="block"
                document.getElementById("passwordHelp").innerText=data.error;
             }
         })
