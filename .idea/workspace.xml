@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f8414b00-f938-45fd-b698-bac27195c1a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skrn.html" beforeDir="false" afterPath="$PROJECT_DIR$/skrn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/test" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -68,6 +71,10 @@
       <workItem from="1613423754146" duration="529000" />
       <workItem from="1613477788459" duration="444000" />
       <workItem from="1613478392307" duration="659000" />
+      <workItem from="1613479235613" duration="2534000" />
+      <workItem from="1613481907703" duration="4819000" />
+      <workItem from="1613486777427" duration="654000" />
+      <workItem from="1613494670604" duration="5652000" />
     </task>
     <task id="LOCAL-00001" summary="added signIn.html">
       <created>1613226053197</created>
@@ -97,5 +104,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added signIn.html" />
     <option name="LAST_COMMIT_MESSAGE" value="added signIn.html" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../Javascript/Day5/Mohamed_Gamal_lap4/js/myScript.js</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

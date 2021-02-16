@@ -100,7 +100,7 @@ input[type=text],input[type=password],input[type=email] {
    
   
 }
-input[type=submit] {
+input[type=button] {
     width: 100%;
    box-sizing: border-box;
    padding: 10px 0;
@@ -251,4 +251,3 @@ footer p{
     .banner{
         padding: 100px 50px;
     }}
-      

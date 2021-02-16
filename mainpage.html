@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>main page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/mainpage.css">
     <link rel="stylesheet" href="css/lightslider.css">
@@ -32,11 +33,7 @@
             <li><a href="#">Horror</a></li>
         </ul>
         <!--search------------->
-        <div class="search">
-            <input type="text" placeholder="Find Your Favourtie Movies"/>
-            <!--search-icon----------->
-            <i class="fas fa-search"></i>
-        </div>
+         <a class=" btn  btn-outline-danger btn-small" style="margin-bottom: 1%"onclick="signOut()">Sign Out</a>
     </nav>
    
 <div class="banner">
@@ -328,6 +325,13 @@
         video.currentTime = 0;
         video.pause();
 
+    }
+    function signOut(){
+        localStorage.removeItem("token");
+        localStorage.removeItem("UserName");
+        localStorage.removeItem("Password");
+        localStorage.removeItem("admin");
+        open("skrn.html","_self")
     }
 </script>
 <script>

@@ -19,7 +19,7 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="skrn.html">Home</a></li>
             <li><a href="#">New RELEASES</a></li>
             <li><a href="#">PRICING PLANS</a></li>
             <li><a href="#">FAQ</a></li>
@@ -40,10 +40,10 @@
                     <div id="errors">
 
                     </div>
-                    <form  class="signup-form" action="#" method="POST" onsubmit="return validation()">
+                    <form  class="signup-form">
                         <h2 class="form-title">Create account</h2>
                         <div >
-                            <input type="text"  id="User"  placeholder="Your Name" required/>
+                            <input type="text"  id="User"  placeholder="User Name" required/>
                         </div>
                         <div >
                             <input type="email"  id="email" placeholder="Your Email"required/>
@@ -53,14 +53,14 @@
                           
                         </div>
                         <div >
-                            <input type="password"   id="pass" placeholder="Repeat your password"/>
+                            <input type="password"   id="re-pass" placeholder="Repeat your password"/>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" /> I agree all statements in   <a href="#" class="term-service">Terms of service</a>
                             
                         </div>
                         <div >
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                            <input type="button"onclick="validation()"  name="submit" id="submit" class="form-submit" value="Sign up"/>
                         </div>
                     </form>
                     <p class="loginhere">
