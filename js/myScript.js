@@ -1,5 +1,4 @@
 function validation(){
-
     var usr =document.getElementById("User");
     var pass =document.getElementById("pass");
     var mail =document.getElementById("email");
