@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8414b00-f938-45fd-b698-bac27195c1a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/video_view_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/video_view_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/video_view_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/video_view_style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
       <workItem from="1613379813938" duration="39000" />
       <workItem from="1613414398762" duration="7079000" />
       <workItem from="1613423617795" duration="78000" />
+      <workItem from="1613423754146" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="added signIn.html">
       <created>1613226053197</created>
