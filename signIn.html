@@ -19,7 +19,7 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="skrn.html">Home</a></li>
             <li><a href="#">New RELEASES</a></li>
             <li><a href="#">PRICING PLANS</a></li>
             <li><a href="#">FAQ</a></li>
@@ -37,11 +37,11 @@
     <!-- <img src="https://blog.matcharesident.com/wp-content/uploads/2019/07/iStock-944453634.jpg" class="img-fluid"> -->
 </div>
 <div class="col-md-4" id="signDiv">
-    <form action="#" method="post" onsubmit=" return signInValidation()" class="bottom-50">
+    <form class="bottom-50">
         <h3 style="text-align: center;margin-bottom: 40px; margin-top: 20px;">Sign In</h3>
         <div class="form-group">
-            <label>Email address</label>
-            <input type="email" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <label>User Name</label>
+            <input type="text" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter User name">
             <small id="emailHelp" class="form-text text-muted" style="display: none">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
@@ -53,8 +53,8 @@
             <input type="checkbox" class="form-check-input" id="rememberMeCheckBox">
             <label class="form-check-label" >Remember me </label>
         </div>
-        <button type="submit" class="btn btn-success">Sign In</button>
-       <br> <label>don't have an account <a href="signup.html">sign up</a></label>
+        <button type="button" onclick="signInValidation()" class="btn btn-success">Sign In</button>
+       <br> <label>don't have an account <a href="signup.html" style="color: #4cae4c">sign up</a></label>
     </form>
 </div>
 </div>
