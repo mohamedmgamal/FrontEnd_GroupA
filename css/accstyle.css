@@ -125,7 +125,8 @@ button
     margin-left: 170px;
     width: 240px;
     height: 45px;
-    font-family: cursive;  
+    font-family: cursive; 
+    transition: 1s; 
 }
 .del
 {
@@ -208,6 +209,7 @@ button
     font-weight: bold;
     margin-top: 25px;
     margin-left: -66px;
+    transition: 1s;
 }
 .pinfo .container .btn2
 {
@@ -217,6 +219,7 @@ button
     height: 40px;
     color: #07681fd7;
     font-weight: bold;
+    transition: 1s;
 }
 .pinfo .container .form3
 {
@@ -246,6 +249,7 @@ button
 .pg .container .imgs
 {
     width: 50px;
+    cursor: pointer;
 }
 .pg .container .img1
 {
@@ -310,7 +314,7 @@ button
 .pg .container small
 {
     font-weight: bold;
-    /* font-family: cursive; */
+    font-family: cursive;
 }
 .btn3
 {
@@ -319,4 +323,5 @@ button
     width: 165px;
     margin-left: 482px;
     font-weight: bold;
+    transition: 1s;
 }
