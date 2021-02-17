@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/video_view_style.css">
     <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body ><div class="container-fluid">
 <div id="videoContainer" class="col-md-12">
@@ -35,7 +36,7 @@
    <h1 id="videoTitle" >Mulan 2020</h1>
     <p><h3>Description : </h3>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
 <button type="button" class="btn btn-danger disabled" id="editButton">Edit</button>
-    <button type="button" class="btn btn-success " id="RateEdit">Rate</button>
+    <button type="button" class="btn btn-success " id="RateEdit" onclick="toggleVideo();">Rate</button>
 </div>
     <section id="movies-list">
         <!--box-1------------------------>
@@ -153,9 +154,49 @@
                 Veniom (2019) <br> HDRip 1080p HD
             </div>
         </div>
-
+        <div id="id01" class="modal">
+            <img src="img/close.png" class="close" onclick="toggleVideo();">
+            <div class="con">
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <form action="#" >
+                        <header></header>
+                        <div class="textarea">
+                          <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                        </div>
+                        <div class="btn">
+                          <button type="submit" >Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
+<script>
+    function toggleVideo(){
+        const tra = document.querySelector('.modal');
+        var modal = document.getElementById('id01');
+        tra.classList.toggle('active');
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        tra.classList.toggle('active');
+    }
+}
+}
+
+
+
+</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/video_view_script.js"></script>
 </body>
