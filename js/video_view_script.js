@@ -84,6 +84,15 @@ document.getElementById("input-range").addEventListener("change",function (){
     myVideo.volume=document.getElementById("input-range").value;
 })
 function LoadVideo(){
+    if ( localStorage.getItem("token"))
+        document.getElementById("btnSignOut").style.display="inline-block";
+    else
+    {
+        open("skrn.html","_self")
+        return false;
+    }
+    if ( localStorage.getItem("admin"))
+        document.getElementById("btnAddVidoe").style.display="inline-block";
     var video=localStorage.getItem("selectedMovie");
     video=JSON.parse(video);
     myVideo.src=video.url;

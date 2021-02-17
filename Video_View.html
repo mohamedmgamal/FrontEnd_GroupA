@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="css/mainpage.css">
 </head>
 <body  onload="LoadVideo()"><div class="container-fluid">
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <h2>SKRN</h2>
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" style="display: none;"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+
+        </ul>
+        <!--search------------->
+        <div>
+            <a id="btnSignOut" class=" btn  btn-outline-danger btn-small" style="margin-bottom: 1%;display:none "onclick="signOut()">Sign Out</a>
+            <a id="btnAddVidoe"  class=" btn  btn-outline-info btn-small" style="margin-bottom: 1%;display: none"href="add_Video.html">add video</a>
+        </div></nav>
 <div id="videoContainer" class="col-md-12">
     <div id="overlay" ></div>
     <video id="myVideo" class="col-md-12" onclick="playPause()" autobuffer >
