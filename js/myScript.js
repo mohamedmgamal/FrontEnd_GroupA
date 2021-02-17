@@ -106,7 +106,6 @@ function signInValidation(){
     if (rememberMeCheckBox.checked == true)
     {
         localStorage.setItem("UserName",signInEmail.value);
-        localStorage.setItem("Password",signInPassword.value);
     }
     signIn(signInEmail.value,signInPassword.value)
 }
@@ -157,7 +156,8 @@ async function signIn(userName,password){
         .then(data => {
             if (data.token){
                 console.log({data})
-                localStorage.setItem("token",data.token)
+                localStorage.setItem("token",data.data.token)
+                console.log("token",data.data.token+" "+data.data.username )
                open("mainpage.html","_self")
             }
             else if (data.error){

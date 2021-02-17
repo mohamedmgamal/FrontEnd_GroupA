@@ -83,4 +83,10 @@ myVideo.onvolumechange=function (e){updateVolume();}
 document.getElementById("input-range").addEventListener("change",function (){
     myVideo.volume=document.getElementById("input-range").value;
 })
+function LoadVideo(){
+    var video=localStorage.getItem("selectedMovie");
+    video=JSON.parse(video);
+    myVideo.src=video.url;
+    document.getElementById("videoTitle").innerText=video.title;
 
+}

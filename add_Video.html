@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container" style="padding: 5%">
-    <form method="get" action="#" onsubmit="return validation()">
+    <form method="get">
     <div class="form-group">
         <label>Video Title</label>
         <input type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp" placeholder="Enter video title">
@@ -48,7 +48,7 @@
             </select>
         </div>
     </div>
-    <button type="submit" class="btn btn-success">Add</button></form>
+    <button type="button"onclick="validation()" class="btn btn-success">Add</button></form>
 </div>
 <script src="js/add_Video.js"></script>
 <script src="js/bootstrap.min.js"></script>

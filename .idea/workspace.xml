@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8414b00-f938-45fd-b698-bac27195c1a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/homeScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Video_View.html" beforeDir="false" afterPath="$PROJECT_DIR$/Video_View.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_Video.html" beforeDir="false" afterPath="$PROJECT_DIR$/add_Video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/add_Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/add_Video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/video_view_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/video_view_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +80,10 @@
       <workItem from="1613494670604" duration="5878000" />
       <workItem from="1613506078124" duration="714000" />
       <workItem from="1613508169138" duration="1588000" />
+      <workItem from="1613551104460" duration="409000" />
+      <workItem from="1613568649082" duration="1704000" />
+      <workItem from="1613570414276" duration="3249000" />
+      <workItem from="1613575052361" duration="15842000" />
     </task>
     <task id="LOCAL-00001" summary="added signIn.html">
       <created>1613226053197</created>

@@ -12,7 +12,7 @@
     
     
 </head>
-<body>
+<body onload="onloadPage()">
      <!--navigation-------------->
      <nav>
         <!--logo--------------->
@@ -31,10 +31,13 @@
             <li><a href="#">TV Shows</a></li>
             <li><a href="#">Hollywood</a></li>
             <li><a href="#">Horror</a></li>
+
         </ul>
         <!--search------------->
-         <a class=" btn  btn-outline-danger btn-small" style="margin-bottom: 1%"onclick="signOut()">Sign Out</a>
-    </nav>
+         <div>
+         <a id="btnSignOut" class=" btn  btn-outline-danger btn-small" style="margin-bottom: 1%;display:none "onclick="signOut()">Sign Out</a>
+         <a id="btnAddVidoe"  class=" btn  btn-outline-info btn-small" style="margin-bottom: 1%;display: none"href="add_Video.html">add video</a>
+         </div></nav>
    
 <div class="banner">
     <img src="img/bg.jpg" class="bg" >
@@ -187,121 +190,6 @@
     <h2>Movies</h2>
 </div>
 <section id="movies-list">
-    <!--box-1------------------------>
-    <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-                <img src="img/l-1.jpg">
-            </a>
-            
-        </div>
-        <!--text--------->
-        <div class="link">
-            Star Trek Into Darkness (2013)  HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-2------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-
-            <a href="#">
-                <img src="img/l-2.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-            Fantastic Beasts (2018)  <br>
-             HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-3------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-            <img src="img/l-3.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-            Croods (2018) <br> HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-4------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-                <img src="img/l-4.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-            Toy Story 3 (2017) <br> HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-5------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-                <img src="img/l-5.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-           COCO (2019) <br> HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-6------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-                <img src="img/l-6.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-           The rise of skywalker (2020) <br> HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-7------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-                <img src="img/l-7.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-            ROGUE ONE (2020)<br> HDRip 1080p HD
-        </div>
-    </div>
-     <!--box-8------------------------>
-     <div class="movies-box">
-        <!--img------------>
-        <div class="movies-img">
-            <div class="quality">HDRip</div>
-            <a href="#">
-                <img src="img/l-8.jpg">
-            </a>
-        </div>
-        <!--text--------->
-        <div class="link">
-            Veniom (2019) <br> HDRip 1080p HD
-        </div>
-    </div>
     <div class="pagination">
         <a href="#">&laquo;</a>
         <a href="#" class="active">1</a>
@@ -317,22 +205,7 @@
     
     <p>Copyright &copy; 2021 All Rights Reserved </p>
 </footer>
-<script>
-    function toggleVideo(){
-        const tra = document.querySelector('.trailer');
-        const video =document.querySelector('video');
-        tra.classList.toggle('active');
-        video.currentTime = 0;
-        video.pause();
-
-    }
-    function signOut(){
-        localStorage.removeItem("token");
-        localStorage.removeItem("UserName");
-        localStorage.removeItem("Password");
-        localStorage.removeItem("admin");
-        open("skrn.html","_self")
-    }
+<script src="js/homeScript.js">
 </script>
 <script>
     $(document).ready(function() {
