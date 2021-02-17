@@ -5,7 +5,7 @@
 #videoContainer{
     background-color: black;
     position: relative;
-    border: solid brown;
+    border: solid #1CEE51;
 }
 #selector{
     position: relative;

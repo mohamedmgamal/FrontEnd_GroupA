@@ -1,4 +1,4 @@
-function validation() {
+async function validation() {
     var inputTitle = document.getElementById("inputTitle");
     var inputUrl = document.getElementById("inputUrl");
     var smallTitle = document.getElementById("titleHelp");
@@ -27,5 +27,30 @@ function validation() {
         smallTitle.style.display="block";
         return false;
     }
-    alert("Adding video")
+    title=inputTitle.value;
+    url=inputUrl.value;
+    var data = {
+            "url":url,
+            "title":title
+        };
+var requestOptions = {
+    method: 'POST',
+    headers:  {'Content-Type': 'application/json',"token":localStorage.getItem("token")},
+    body: JSON.stringify(data),
+    redirect: 'follow'
+};
+console.log({requestOptions})
+
+fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/4/videos/", requestOptions)
+    .then(response => response.json())
+    .then(data => {
+         if (data.error){
+            console.log(data.error)
+        }
+        else {
+            console.log({data});
+            open("mainpage.html","_self");
+        }
+    })
+    .catch(error => console.error('error', error));
 }

@@ -29,11 +29,9 @@ document.getElementById("progressPar").addEventListener("click",function (e){
 })
 function  fowroadd(){
     myVideo.currentTime+=1;
-    myVideo.pause();
 }
 function  backwordd(){
     myVideo.currentTime-=1;
-    myVideo.pause();
 }
 function speedChanged(selector){
     myVideo.playbackRate =selector.value;
@@ -85,4 +83,10 @@ myVideo.onvolumechange=function (e){updateVolume();}
 document.getElementById("input-range").addEventListener("change",function (){
     myVideo.volume=document.getElementById("input-range").value;
 })
+function LoadVideo(){
+    var video=localStorage.getItem("selectedMovie");
+    video=JSON.parse(video);
+    myVideo.src=video.url;
+    document.getElementById("videoTitle").innerText=video.title;
 
+}
