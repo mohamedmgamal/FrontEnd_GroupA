@@ -139,7 +139,8 @@ button
 .ginfo
 {
     overflow: hidden;
-    margin-top: 47px;
+    margin-top: 66px;
+    margin-left: -60px;
 }
 .ginfo .container h1
 {
@@ -198,7 +199,7 @@ button
 }
 .ainfo .container .form2
 {
-    margin-left: -3px;
+    margin-left: 272px;
 }
 .ainfo .container .form2 .btn
 {
@@ -477,7 +478,7 @@ button
     }
     .ainfo .container h1 , .pinfo .container h1 , .pg .container h1 ,.ainfo .container p , .pinfo .container p ,.ainfo .container .form2 .btn
     {margin-left: 0px;}
-    .ainfo .container .form2 { width: 450px;}
+    .ainfo .container .form2 { width: 450px; margin-left: 0px}
     .ainfo .container .form2 .btn
     {
         width: 160px;
@@ -542,16 +543,15 @@ button
     #videoElement {margin-left: 0px;}
     button {margin-left: 30px;}
     .del {margin-left: 90px;} 
-    .ginfo {margin-top: 60px; margin-left: 325px;}
+    .ginfo {margin-top: -377px; margin-left: 325px;}
     .ginfo .container .form1 , .ainfo .container .form2 , .pinfo .container .form3 , .ginfo .container .fl , .ginfo .container .fc
     {
         margin-left: 0px;
-        width: 400px;
         margin-top: 20px;
     }
     .fhr
     {
-        margin-top: 110px;
+        margin-top: 88px;
         width:985px;
         margin-left: 8px;
     }
@@ -621,11 +621,7 @@ button
         margin-bottom: -30px;
         margin-top: -102px;
     }
-    .pg .container small
-    {
-        font-weight: bold;
-        font-family: cursive;
-        margin-left: 5px;
-    }
-    .btn3 {margin-left: 25px;}
+    .pg .container small {margin-left: 5px;}
+    .btn3 {margin-left: 25px; margin-bottom: 30px;}
 }
+
