@@ -71,7 +71,7 @@ function validation(){
      addToServer(usr.value,pass.value);
 }
 function onload(){
-    if (localStorage.getItem("UserName")&&localStorage.getItem("Password"))
+    if (localStorage.getItem("UserName"))
         open("mainpage.html","_self")
 }
 function signInValidation(){
@@ -122,7 +122,7 @@ async function addToServer(usr,pass){
         redirect: 'follow'
     };
 
-    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/4/register", requestOptions)
+    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/register", requestOptions)
         .then(response => response.json())
         .then(data => {
             if (data.token){
@@ -151,7 +151,7 @@ async function signIn(userName,password){
         redirect: 'follow'
     };
 
-    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/4/login", requestOptions)
+    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/login", requestOptions)
         .then(response => response.json())
         .then(data => {
             if (data.token){
