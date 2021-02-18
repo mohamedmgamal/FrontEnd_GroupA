@@ -73,7 +73,6 @@
 }
 .navbar-nav > li > a 
 {
-
     font-size: 18px;
     /* font-family:cursive; */
     color: black;
@@ -315,6 +314,7 @@ button
 {
     font-weight: bold;
     font-family: cursive;
+    margin-left: 5px;
 }
 .btn3
 {
@@ -324,4 +324,308 @@ button
     margin-left: 482px;
     font-weight: bold;
     transition: 1s;
+}
+@media(max-width: 767px)
+{
+    .links
+    {
+        margin-left: 5px;
+        width: 200px;    
+    }
+    .links ul li .py1
+    {
+        float: right;
+        margin-right: -220px;
+        margin-top: -37px;
+    }
+    hr
+    {
+        margin-top: -10px;
+        margin-left: 19px;
+    }
+    #container {margin-left: -55px;}
+    .ginfo
+    {
+        margin-top: 500px;
+        margin-left: 5px;
+    }
+    .ginfo .container .form1 , .ainfo .container .form2 , .pinfo .container .form3
+    {width: 430px}
+    .ginfo .container p , .ainfo .container p , .pinfo .container p , .pg .container p
+    {font-size: 16px;}
+    .ginfo .container .fl , .ginfo .container .fc {margin-left:0px;}
+    .fhr
+    {
+        width:480px;
+        margin-left: 6px;
+    }
+    .ainfo{margin-left: -268px;}
+    .ainfo .container .form2 {margin-left: 272px;}
+    .ainfo .container .form2 .btn {margin-left: 0px; margin-bottom: -20px;}
+    .pinfo .container h1 , .pinfo .container p { margin-left: 5px;}
+    .pinfo .container .btn2
+    {
+        margin-left: 5px;
+        margin-top: 10px; 
+        width:150px;
+        height: 37px;
+        margin-bottom: 25px;
+    }
+    .pinfo .container .form3 {margin-left: 3px;}
+    .pinfo .container .fp2 {margin-top: 35px; margin-bottom: -3px;}
+    .pg .container h1 , .pg .container p { margin-left: 5px;}
+    .pg .container .imgs
+    {
+        width: 65px;
+        cursor: pointer;
+    }
+    .pg .container .img1 {margin-left: 7px;}
+    .pg .container .img2 
+    {
+        margin-left: 135px;
+        margin-top: -85px;
+    }
+    .pg .container .img3
+    {
+        margin-left: 267px;
+        margin-top: -84px;
+    }
+    .pg .container .img4
+    {
+        margin-left: 390px;
+        margin-top: -84px;
+    }
+    .pg .container .img5
+    {
+        margin-left: 5px;
+        margin-top: 50px;
+    }
+    .pg .container .img6
+    {
+        margin-left: 132px;
+        margin-top: -85px;
+    }
+    .pg .container .img7
+    {
+        margin-left: 260px;
+        margin-top: -84px;
+    }
+    .pg .container .img8
+    {
+        margin-left: 390px;
+        margin-top: -84px;
+    }
+    .pg .container .img9
+    {
+        margin-left: 6px;
+        margin-top: 50px;
+    }
+    .pg .container .img10
+    {
+        margin-left: 130px;
+        margin-top: -85px;
+    }
+    .pg .container .img11
+    {
+        margin-left: 258px;
+        margin-top: -86px;
+    }
+    .pg .container .img12
+    {
+        margin-left: 383px;
+        margin-top: -84px;
+    }
+    .pg .container small {margin-left: 10px;}
+    .btn3 { margin-left: 15px; margin-bottom: 20px;}
+}
+@media(min-width: 768px) and (max-width: 991px)
+{
+    .links {margin-left: -5px;}
+    hr
+    {
+        margin-top: 0px;
+        margin-left: 23px;
+    }
+    #videoElement{margin-left: 0px;}
+    button
+    {
+        margin-left: 38px;
+        width: 210px;  
+    }
+    .del { margin-left: 85px;}
+    .ginfo
+    {
+        margin-top: 60px;
+        margin-left: 330px;
+    }
+    .ginfo .container h1
+    {
+        font-size: 27px;
+        font-weight: bold;
+        color: black;   
+    }
+    .ginfo .container p , .ainfo .container p , .pinfo .container p , .pg .container p
+    {width:400px;}
+    .ginfo .container .form1 , .ainfo .container .form2 , .pinfo .container .form3
+    {width: 380px;}
+    .ginfo .container .fl , .ginfo .container .fc {margin-left: -1px;}
+    .fhr
+    {
+        margin-top: 90px;
+        width:760px;
+        margin-left: 3px;
+    }
+    .ainfo .container h1 , .pinfo .container h1 , .pg .container h1 ,.ainfo .container p , .pinfo .container p ,.ainfo .container .form2 .btn
+    {margin-left: 0px;}
+    .ainfo .container .form2 { width: 450px;}
+    .ainfo .container .form2 .btn
+    {
+        width: 160px;
+        height: 40px;
+        margin-bottom: -55px;
+    }
+    .pinfo .container .btn2
+    {
+        margin-top: -80px;
+        margin-right: 0px;
+        width: 130px;
+    }
+    .pinfo .container .form3 ,.pinfo .container .fp1 , .pinfo .container .fp2
+    {margin-left: 0px; width: 450px;}
+    .pinfo .container .fp2 { margin-top: 33px; margin-bottom: -40px;}
+    .pg .container p {margin-left: 0px;}
+    .pg .container .imgs
+    {
+        width: 70px;
+        cursor: pointer;
+    }
+    .pg .container .img1 , .pg .container .img7{margin-left: 15px;}
+    .pg .container .img2 , .pg .container .img8
+    {
+        margin-left: 140px;
+        margin-top: -88px;
+    }
+    .pg .container .img3 , .pg .container .img9
+    {
+        margin-left: 260px;
+        margin-top: -89px;
+    }
+    .pg .container .img4 , .pg .container .img10
+    {
+        margin-left: 380px;
+        margin-top: -89px;
+    }
+    .pg .container .img5 , .pg .container .img11
+    {
+        margin-left: 500px;
+        margin-top: -88px;
+    }
+    .pg .container .img6 , .pg .container .img12
+    {
+        margin-left: 620px;
+        margin-top: -87px;
+    }
+    .pg .container .img7 { margin-top: 60px;}
+    .pg .container .img12
+    {
+        margin-top: -89px;
+        margin-bottom: -25px;
+    }
+    .btn3 
+    {
+     margin-left: 25px;
+    margin-bottom: 25px;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px)
+{
+    #videoElement {margin-left: 0px;}
+    button {margin-left: 30px;}
+    .del {margin-left: 90px;} 
+    .ginfo {margin-top: 60px; margin-left: 325px;}
+    .ginfo .container .form1 , .ainfo .container .form2 , .pinfo .container .form3 , .ginfo .container .fl , .ginfo .container .fc
+    {
+        margin-left: 0px;
+        width: 400px;
+        margin-top: 20px;
+    }
+    .fhr
+    {
+        margin-top: 110px;
+        width:985px;
+        margin-left: 8px;
+    }
+    .ainfo .container h1 , .pinfo .container h1 , .pg .container h1 , .ainfo .container p , .pinfo .container p , .pg .container h1 , .pg .container p
+    {margin-left: 5px;}
+    .ainfo .container .form2 {width: 480px;}
+    .ainfo .container .form2 .btn
+    {
+        float: right;
+        margin-top: -55px;
+        margin-right: -200px;       
+    }
+    .pinfo .container .btn2
+    {
+        margin-top: -8%;
+        margin-right:  260px;
+        width: 150px;    
+    }
+    .pinfo .container .form3 , .pinfo .container .fp1 , .pinfo .container .fp2
+    {
+        margin-left: 0px;
+        width: 480px;
+    }
+    .pinfo .container .fp2
+    {
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+    .pg .container .imgs
+    {
+        width: 80px;
+        cursor: pointer;
+    }
+    .pg .container .img1 , .pg .container .img7
+    {
+        margin-left: 10px;
+        margin-top: 35px;
+    }
+    .pg .container .img2 , .pg .container .img8
+    {
+        margin-left: 158px;
+        margin-top: -97px;
+    }
+    .pg .container .img3 , .pg .container .img9
+    {
+        margin-left: 310px;
+        margin-top: -100px;
+    }
+    .pg .container .img4 , .pg .container .img10
+    {
+        margin-left: 460px;
+        margin-top: -97px;
+    }
+    .pg .container .img5 , .pg .container .img11
+    {
+        margin-left: 600px;
+        margin-top: -97px;
+    }
+    .pg .container .img6 ,  .pg .container .img12
+    {
+        margin-left: 750px;
+        margin-top: -100px;
+    }
+    .pg .container .img7 {margin-top: 60px; }
+    .pg .container .img12
+    {
+        margin-bottom: -30px;
+        margin-top: -102px;
+    }
+    .pg .container small
+    {
+        font-weight: bold;
+        font-family: cursive;
+        margin-left: 5px;
+    }
+    .btn3 {margin-left: 25px;}
 }
