@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body  onload="LoadVideo()"><div class="container-fluid">
+    <nav>
+        <!--logo--------------->
+        <a href="mainpage.html" class="logo">
+            <h2>SKRN</h2>
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" style="display: none;"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+
+        </ul>
+        <!--search------------->
+        <div>
+            <a id="btnSignOut" class=" btn  btn-outline-danger btn-small" style="margin-bottom: 1%;display:none "onclick="signOut()">Sign Out</a>
+            <a id="btnAddVidoe"  class=" btn  btn-outline-info btn-small" style="margin-bottom: 1%;display: none"href="add_Video.html">add video</a>
+        </div></nav>
 <div id="videoContainer" class="col-md-12">
     <div id="overlay" ></div>
     <video id="myVideo" class="col-md-12" onclick="playPause()" autobuffer >
@@ -35,7 +59,7 @@
 <div class="col-md-12" style="padding-top: 1%">
    <h1 id="videoTitle" >Mulan 2020</h1>
     <p><h3>Description : </h3>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-<button type="button" class="btn btn-danger disabled" id="editButton">Edit</button>
+<a type="button" class="btn btn-danger disabled" href="edit_video.html" id="editButton">Edit</a>
     <button type="button" class="btn btn-success " id="RateEdit" onclick="toggleVideo();">Rate</button>
 </div>
     <section id="movies-list">
@@ -199,5 +223,6 @@
 </script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/video_view_script.js"></script>
+
 </body>
 </html>

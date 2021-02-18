@@ -1,18 +1,37 @@
 var html="";
 var datalist=[];
+var imageList=["img/l-1.jpg","img/l-2.jpg","img/l-3.jpg","img/l-4.jpg","img/l-5.jpg","img/l-6.jpg"
+    ,"img/l-7.jpg","img/l-8.jpg","img/l-9.jpg","img/l-10.jpg","img/l-11.jpg","img/l-12.jpg","img/l-13.jpg",
+    "img/l-14.jpg","img/l-15.jpeg","img/l-16.jpg"];
 function toggleVideo(){
     const tra = document.querySelector('.trailer');
     const video =document.querySelector('video');
     tra.classList.toggle('active');
     video.currentTime = 0;
     video.pause();
-
 }
 function signOut(){
     localStorage.removeItem("token");
     localStorage.removeItem("UserName");
     localStorage.removeItem("Password");
     localStorage.removeItem("admin");
+    var requestOptions = {
+        method: 'GET',
+        headers:  {'Content-Type': 'application/json',"token":localStorage.getItem("token")},
+        redirect: 'follow'
+    };
+    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/logout/", requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            if (data.error){
+                console.log(data.error)
+            }
+            else {
+                console.log({data});
+                open("skrn.html","_self");
+            }
+        })
+        .catch(error => console.error('error', error));
     open("skrn.html","_self")
 }
  async function onloadPage(){
@@ -32,7 +51,7 @@ function signOut(){
         headers: myHeaders,
         redirect: 'follow'
     };
-    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/4/videos/", requestOptions)
+    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/videos/", requestOptions)
         .then(response => response.json())
         .then(data => {
             console.log({data})
@@ -48,9 +67,7 @@ function signOut(){
         }
 function addData(data){
     datalist.push(data);
-  var imageList=["img/l-1.jpg","img/l-2.jpg","img/l-3.jpg","img/l-4.jpg","img/l-5.jpg","img/l-6.jpg"
-        ,"img/l-7.jpg","img/l-8.jpg"];
-  var randomNum=Math.floor(Math.random() * 7);
+  var randomNum=Math.floor(Math.random() * 16);
 var imagePath=imageList[randomNum]
     console.log(randomNum)
      html+="<div class=\"movies-box\" onclick=movieSelected("+data.id+")>\n" +
