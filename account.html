@@ -36,16 +36,17 @@
             </ul>
         </div>
         <hr>
-        <aside>
+        <div class="row">
+        <aside class="col-md-4">
             <div id="container">
-                <video autoplay="true" id="videoElement"></video>
+                <video autoplay="true" id="videoElement" class="col-md-12"></video>
                 <button class="btn btn-success" onclick="takescreenshot();">Change Your Profile Picture</button>
                 <button class="btn del" onclick="stop();">Delete</button>
-                <canvas id="showscreenshot" ></canvas>
+                <canvas id="showscreenshot" class="col-md-12 img-responsive"></canvas>
                 <img id="showscreenshotimg"/>
             </div>
         </aside>
-        <section class="ginfo">
+        <section class="ginfo col-md-8">
                 <div class="container">
                     <h1>General Information</h1>
                     <p class="lead">By letting us know your name, we can make our support experience much more personal.</p>
@@ -75,8 +76,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+
+        </section></div>
         <hr class="fhr">
         <section class="ainfo">
             <div class="container">
@@ -232,13 +233,13 @@
             
             var stream = video.srcObject;
             var tracks = stream.getTracks();
-    
             for (var i = 0; i < tracks.length; i++) {
                 var track = tracks[i];
                 track.stop();
             }
-    
             video.srcObject = null;
+            canvas.width=0;
+            canvas.height=0;
             }
             
             
@@ -249,7 +250,7 @@
                 
                 ctx.drawImage(video, 0, 0);
                 // Other browsers will fall back to image/png
-                img.src = canvas.toDataURL("image/webp");
+                //img.src = canvas.toDataURL("image/webp");
             };
         </script>
         <script src="js/all.min.js"></script>

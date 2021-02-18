@@ -84,9 +84,44 @@ document.getElementById("input-range").addEventListener("change",function (){
     myVideo.volume=document.getElementById("input-range").value;
 })
 function LoadVideo(){
+    if ( localStorage.getItem("token"))
+        document.getElementById("btnSignOut").style.display="inline-block";
+    else
+    {
+        open("skrn.html","_self")
+        return false;
+    }
+    if (localStorage.getItem("admin"))
+        document.getElementById("editButton").classList.remove("disabled");
+    if ( localStorage.getItem("admin"))
+        document.getElementById("btnAddVidoe").style.display="inline-block";
     var video=localStorage.getItem("selectedMovie");
     video=JSON.parse(video);
     myVideo.src=video.url;
     document.getElementById("videoTitle").innerText=video.title;
 
+}
+function signOut(){
+    localStorage.removeItem("token");
+    localStorage.removeItem("UserName");
+    localStorage.removeItem("Password");
+    localStorage.removeItem("admin");
+    var requestOptions = {
+        method: 'GET',
+        headers:  {'Content-Type': 'application/json',"token":localStorage.getItem("token")},
+        redirect: 'follow'
+    };
+    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/logout/", requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            if (data.error){
+                console.log(data.error)
+            }
+            else {
+                console.log({data});
+                open("skrn.html","_self");
+            }
+        })
+        .catch(error => console.error('error', error));
+    open("skrn.html","_self")
 }
