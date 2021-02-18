@@ -12,10 +12,7 @@
     background:#ddd;
 }
 
-/* ::-webkit-scrollbar-track {
-   
-    border-radius: 15px;
-} */
+
 
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
@@ -109,7 +106,7 @@ nav .menu li a:hover{
 .content{
     position: relative;
     z-index: 1;
-    max-width: 550px;
+    max-width: 400px;
 
 }
 .movieTitle{
