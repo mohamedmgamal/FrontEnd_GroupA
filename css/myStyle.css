@@ -25,9 +25,10 @@ nav{
     color:#242424;
     font-weight: bolder;
     font-size: 25px;
-    
-
-    
+  
+}
+.logo:hover{
+    color: #242424;
 }
 nav .menu{
     display: flex;
