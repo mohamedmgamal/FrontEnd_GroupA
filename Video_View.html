@@ -33,13 +33,13 @@
             <a id="btnSignOut" class=" btn  btn-outline-danger btn-small" style="margin-bottom: 1%;display:none "onclick="signOut()">Sign Out</a>
             <a id="btnAddVidoe"  class=" btn  btn-outline-info btn-small" style="margin-bottom: 1%;display: none"href="add_Video.html">add video</a>
         </div></nav>
-<div id="videoContainer" class="col-md-12">
+<div id="videoContainer" class="col-md-12" style="border: none;">
     <div id="overlay" ></div>
     <video id="myVideo" class="col-md-12" onclick="playPause()" autobuffer >
         unavailable video
         <source src="img/mulan.mp4" type="video/mp4">
     </video><br>
-    <div id="videoPlayer" class="col-md-12 ">
+    <div id="videoPlayer" class="col-md-12 " >
         <img id="startPause" class="playerPtns img-fluid" src="img/ic_play_circle_filled_white_48px-512.png" onclick="playPause()">
         <img class="playerPtns" src="img/stop-icon-18-256.png" onclick="stopp()">
         <input type="range" style="position:absolute;top: 91%;left: 3%;display: none"id="input-range"min="0" max="1"step=".1">

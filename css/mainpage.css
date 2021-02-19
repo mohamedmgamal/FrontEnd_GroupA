@@ -85,6 +85,7 @@ nav .menu li a:hover{
     
 }
 
+
 .banner{
     position: relative;
     width: 100%; 
@@ -584,6 +585,9 @@ footer p{
    .trailer video{
        max-width: 90%;
    }
+   #videoContainer{
+    max-width: 90%;
+   }
 }
 
    
@@ -599,6 +603,9 @@ footer p{
         bottom: 30px;
         
     }
+    #videoContainer{
+        max-width: 50%;
+       }
     }
     
     
