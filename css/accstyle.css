@@ -117,15 +117,26 @@ aside
     background-image: url(../img/screen.jpg);
     border-radius: 150px;
 }
-canvas , .showscreenshotimg
+video
 {
-    /* background-color:black; */
-    width: 310px;
-    margin-left: 150px;
-    margin-top: -160%;
-    padding: 95px;
-    border-radius: 30px;
+    display: flex;
+    height: 900px;
+    background-color: rgba(139, 30, 11, 0.753);
 }
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img
+{
+    display: flex;
+    padding: 1px;
+    height: 315px;
+    margin-left: 150px;
+    margin-top: -160%;  
+    border-radius: 30px; 
+    -webkit-z-index: 9999;
+    -moz-z-index: 9999;
+    -ms-z-index: 9999;
+    -o-z-index: 9999;
+    z-index: 9999;
+} 
 button
 {
     margin-top: 30px;
@@ -259,6 +270,7 @@ button
 {
     width: 50px;
     cursor: pointer;
+    padding:0%;
 }
 .pg .container .img1
 {
