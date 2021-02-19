@@ -153,7 +153,12 @@ i
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 20px;
+}
+.fa-check
+{
+    color: #04c935;
+    margin-right:5px;
 }
 .price .pr1
 {
@@ -168,7 +173,7 @@ i
     background-color: white;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: .1px solid #DDD;
+    border: .1px solid #ddd;
     width: 150px;
     font-weight: 800;
     height: 40px;
@@ -187,16 +192,16 @@ i
     font-weight: bold;
     margin-bottom: 35px;
 }
-.price .pr1 h1 i
+.fa-dollar-sign
 {
     font-size: 35px;
     color: rgb(180, 179, 179);
     padding:0;
-    margin:0 ;
+    margin-left:0 ;
 }
 .price .pr1 h1 .mth
 {
-    font-size: 20px;
+    font-size: 18px;
 }
 .price .pr1 p
 {
@@ -230,12 +235,4 @@ i
     float: left;
     font-weight: bold;
     margin-top: 6px;
-}
-.ft1 .container i
-{
-    margin-left: 20px;
-    cursor: pointer;
-}
-.fa-check{
-    color: #04c935;
 }
