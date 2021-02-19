@@ -123,7 +123,7 @@ video
     height: 900px;
     background-color: rgba(139, 30, 11, 0.753);
 }
-.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img
+#showscreenshot
 {
     display: flex;
     padding: 1px;
@@ -193,17 +193,23 @@ button
 {
     margin-left: -140px;
 }
-.fhr
+/* .fhr
 {
     margin-top: 50px;
     width:940px;
     background-color: #ddd;
     border: .3px solid #ddd;
     margin-left: 475px;
+} */
+#ahr
+{
+    margin-top: -77px;
+    float: right;
+    margin-right: 120px;
 }
 .ainfo .container
 {
-    margin-top: 20px;
+    margin-top: -47px;
 }
 .ainfo .container h1 , .pinfo .container h1 , .pg .container h1
 {
@@ -270,7 +276,6 @@ button
 {
     width: 50px;
     cursor: pointer;
-    padding:0%;
 }
 .pg .container .img1
 {
@@ -381,7 +386,13 @@ button
         width:480px;
         margin-left: 6px;
     }
-    .ainfo{margin-left: -268px;}
+    #ahr
+    {
+        margin-top: 50px;
+        float: left;
+        margin-left: 6px;
+    }
+    .ainfo{margin-left: -268px; margin-top: 120px;}
     .ainfo .container .form2 {margin-left: 272px;}
     .ainfo .container .form2 .btn {margin-left: 0px; margin-bottom: -20px;}
     .pinfo .container h1 , .pinfo .container p { margin-left: 5px;}
@@ -497,6 +508,13 @@ button
         width:760px;
         margin-left: 3px;
     }
+    #ahr
+    {
+        margin-top: 100px;
+        float: left;
+        margin-left: 3px;
+        margin-bottom: 43px;
+    }
     .ainfo .container h1 , .pinfo .container h1 , .pg .container h1 ,.ainfo .container p , .pinfo .container p ,.ainfo .container .form2 .btn
     {margin-left: 0px;}
     .ainfo .container .form2 { width: 450px; margin-left: 0px}
@@ -569,12 +587,20 @@ button
     {
         margin-left: 0px;
         margin-top: 20px;
+        width: 480px;
     }
     .fhr
     {
         margin-top: 88px;
         width:985px;
         margin-left: 8px;
+    }
+    #ahr
+    {
+        margin-top: 100px;
+        float: left;
+        margin-left: 3px;
+        margin-bottom: 40px;
     }
     .ainfo .container h1 , .pinfo .container h1 , .pg .container h1 , .ainfo .container p , .pinfo .container p , .pg .container h1 , .pg .container p
     {margin-left: 5px;}
@@ -583,7 +609,7 @@ button
     {
         float: right;
         margin-top: -55px;
-        margin-right: -200px;       
+        margin-right: -200px;     
     }
     .pinfo .container .btn2
     {
