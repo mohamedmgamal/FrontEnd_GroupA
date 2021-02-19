@@ -12,10 +12,7 @@
     background:#ddd;
 }
 
-/* ::-webkit-scrollbar-track {
-   
-    border-radius: 15px;
-} */
+
 
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
@@ -88,6 +85,7 @@ nav .menu li a:hover{
     
 }
 
+
 .banner{
     position: relative;
     width: 100%; 
@@ -109,7 +107,7 @@ nav .menu li a:hover{
 .content{
     position: relative;
     z-index: 1;
-    max-width: 550px;
+    max-width: 400px;
 
 }
 .movieTitle{
@@ -587,6 +585,9 @@ footer p{
    .trailer video{
        max-width: 90%;
    }
+   #videoContainer{
+    max-width: 90%;
+   }
 }
 
    
@@ -602,6 +603,9 @@ footer p{
         bottom: 30px;
         
     }
+    #videoContainer{
+        max-width: 50%;
+       }
     }
     
     
