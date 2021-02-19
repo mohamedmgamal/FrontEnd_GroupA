@@ -111,11 +111,20 @@ aside
 }
 #videoElement 
 {
-    width: 280px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
     margin-left: 140px;
     background-image: url(../img/screen.jpg);
     border-radius: 150px;
+}
+canvas , .showscreenshotimg
+{
+    /* background-color:black; */
+    width: 310px;
+    margin-left: 150px;
+    margin-top: -160%;
+    padding: 95px;
+    border-radius: 30px;
 }
 button
 {

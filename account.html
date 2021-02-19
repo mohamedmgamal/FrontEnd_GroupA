@@ -43,7 +43,6 @@
                 <button class="btn btn-success" onclick="takescreenshot();">Change Your Profile Picture</button>
                 <button class="btn del" onclick="stop();">Delete</button>
                 <canvas id="showscreenshot" class="col-md-12 img-responsive"></canvas>
-                <img id="showscreenshotimg"/>
             </div>
         </aside>
         <section class="ginfo col-md-8">
@@ -76,7 +75,6 @@
                         </div>
                     </div>
                 </div>
-
         </section></div>
         <hr class="fhr">
         <section class="ainfo">
@@ -210,11 +208,7 @@
     </section>
     <hr class="fhr">
     <button type="button" class="btn btn-success btn3">Save Changes</button>
-
-
-
-
-        <!-- <script>
+        <script>
             var video = document.querySelector("#videoElement");
             var canvas = document.querySelector("#showscreenshot");
             var img = document.querySelector("#showscreenshotimg");
@@ -249,9 +243,8 @@
                 let ctx = canvas.getContext("2d");
                 
                 ctx.drawImage(video, 0, 0);
-                // Other browsers will fall back to image/png
-                //img.src = canvas.toDataURL("image/webp");
-            }; -->
+                
+            };
         </script>
         <script src="js/all.min.js"></script>
         <script src="jquerylib/jquery-3.5.1.min.js" ></script>
