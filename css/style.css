@@ -3,48 +3,81 @@ body
 {
     padding-top:50px;
 }
-
-.navbar
-{
-    background-color: white;
-}
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
-{
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-}
-.navbar-default .navbar-nav > li > a
-{
-    color: black;
-    font-family: 'poppins';
-    padding-top: 17px;
+ul{
+    list-style: none;
    
 }
-.list-unstyled{
-    margin-left: 15%;
+a{
+    text-decoration: none;
 }
-.navbar-default .navbar-nav > li > a:hover
-{
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    border:1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.logo {
+    color:#242424;
+    font-weight: bolder;
+    font-size: 25px; 
+}
+.logo:hover{
+    text-decoration: none;
+    color:#242424 ;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#585858;
+    letter-spacing: 1px;
+}
+
+nav .menu li a:hover{
     background-color: #04c935;
-    color: white;
+    color:#ffffff;
+    transition: all ease 0.2s;
+    text-decoration: none;
+    
+    
+
+    
 }
-.navbar-right
-{
+
+
+.sign_btn{
     margin-right: 1%;
-    margin-top: 9px;
+   
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #04c935;
     color: white;
     font-weight: bold;
     width: 110px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.navbar-right:hover
-{
-    color: white;
-    background-color: #04c935;
-}
+
+
 .pic
 {
     background-image: url('../img/10.jpg');
@@ -54,7 +87,7 @@ body
 }
 .pic .topic1 .container 
 {
-    padding-top: 6%;
+    padding-top: 8%;
     padding-left: 46%;
     opacity: 1;
 }
@@ -213,7 +246,7 @@ i
 {
     margin-top: 40px;
     padding: 10px;
-    border: none;
+    border: 0.5px solid #04c935;
     
 }
 .btn{
@@ -235,4 +268,84 @@ i
     float: left;
     font-weight: bold;
     margin-top: 6px;
+}
+@media(max-width:700px){
+    nav{
+        justify-content: space-between;
+        height: 70px;
+        padding: 0px 10px;
+    }
+    nav .menu{
+       display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background: #fff;
+        border-bottom:4px solid #242424;
+        width:100%;
+        padding:0px;
+        margin:0px;
+    }
+    .menu li{
+        width:100%;
+    }
+    nav .menu li a{
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        margin: 0px;
+        padding:25px;
+        border:1px solid rgba(38,38,38,0.03);
+    }
+ 
+    nav .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding:28px 20px;
+        position: relative;
+        user-select: none;
+        display: block;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position: relative;
+       
+        width: 18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: #333333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top:5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top:-5px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+ 
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu{
+        display: block;
+    }
 }

@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8414b00-f938-45fd-b698-bac27195c1a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/edit_video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/l-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/adminLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Video_View.html" beforeDir="false" afterPath="$PROJECT_DIR$/Video_View.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin _login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin _login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mainpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mainpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/add_Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/add_Video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/homeScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/homeScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/video_view_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/video_view_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +86,9 @@
       <workItem from="1613669146930" duration="952000" />
       <workItem from="1613670831036" duration="1081000" />
       <workItem from="1613672066549" duration="2566000" />
+      <workItem from="1613679093463" duration="8000" />
+      <workItem from="1613746285665" duration="1790000" />
+      <workItem from="1613757268001" duration="1594000" />
     </task>
     <task id="LOCAL-00001" summary="added signIn.html">
       <created>1613226053197</created>

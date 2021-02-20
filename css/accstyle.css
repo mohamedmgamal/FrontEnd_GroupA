@@ -352,6 +352,14 @@ button
     font-weight: bold;
     transition: 1s;
 }
+#showscreenshotimg{
+   
+    width: 280px;
+    height: 270px;
+    margin-left: 140px;
+  
+    border-radius: 150px;
+}
 @media(max-width: 767px)
 {
     .links

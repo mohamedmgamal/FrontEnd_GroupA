@@ -66,6 +66,7 @@ function signOut(){
 
         }
 function addData(data){
+    //alert(data.title)
     datalist.push(data);
   var randomNum=Math.floor(Math.random() * 16);
 var imagePath=imageList[randomNum]
@@ -87,8 +88,13 @@ var imagePath=imageList[randomNum]
 document.getElementById("movies-list").innerHTML=html;
 
 }
-function movieSelected(i){
-    localStorage.setItem("selectedMovie",JSON.stringify(datalist[i]))
+function movieSelected(id){
+    var selectedmovie;
+    for (var i=0;i<datalist.length;i++)
+        if (datalist[i].id==id)
+            selectedmovie=datalist[i];
+    localStorage.removeItem("selectedMovie")
+    localStorage.setItem("selectedMovie",JSON.stringify(selectedmovie))
     localStorage.setItem("MoviesList",JSON.stringify(datalist))
     open("Video_View.html","_self")
 }
