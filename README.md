@@ -1,2 +1,2 @@
-# FrontEnd_GroupA
+# skrn - media streaming center
 front end course project 
