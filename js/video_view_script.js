@@ -104,21 +104,7 @@ function LoadVideo(){
     video=JSON.parse(video);
     myVideo.src=video.url;
     document.getElementById("videoTitle").innerText=video.title;
-    var myHeaders = new Headers();
-    myHeaders.append("token", localStorage.getItem("token"));
-    var requestOptions = {
-        method: 'GET',
-        headers: myHeaders,
-        redirect: 'follow'
-    };
-    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/videos/", requestOptions)
-        .then(response => response.json())
-        .then(data => {
-            console.log({data})
-            data.forEach(addData)})
-        .catch(error => console.log('error', error));
-
-}
+   }
 function signOut(){
     localStorage.removeItem("token");
     localStorage.removeItem("UserName");
@@ -143,35 +129,14 @@ function signOut(){
         .catch(error => console.error('error', error));
     open("skrn.html","_self")
 }
-function addData(data){
-    //alert(data.title)
-    datalist.push(data);
-    var randomNum=Math.floor(Math.random() * 16);
-    var imagePath=imageList[randomNum]
-    console.log(randomNum)
-    html+="<div class=\"movies-box\" onclick=movieSelected("+data.id+")>\n" +
-        "        <!--img------------>\n" +
-        "        <div class=\"movies-img\">\n" +
-        "            <div class=\"quality\">HDRip</div>\n" +
-        "            <a href=\"#\">\n" +
-        "                <img src="+imagePath+">\n" +
-        "            </a>\n" +
-        "            \n" +
-        "        </div>\n" +
-        "        <!--text--------->\n" +
-        "        <div class=\"link\">\n" +
-        data.title+
-        "        </div>\n" +
-        "    </div>"
-    document.getElementById("movies-list").innerHTML=html;
-
-}
-function movieSelected(id){
-    var selectedmovie;
-    for (var i=0;i<datalist.length;i++)
-        if (datalist[i].id==id)
-            selectedmovie=datalist[i];
-    localStorage.removeItem("selectedMovie")
-    localStorage.setItem("selectedMovie",JSON.stringify(selectedmovie))
-    open("Video_View.html","_self")
+function toggleVideo(){
+     console.log(document.querySelector('.modal'))
+     var tra = document.querySelector('.modal');
+     var modal = document.getElementById('id01');
+    tra.classList.toggle('active');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            tra.classList.toggle('active');
+        }
+    }
 }
