@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f8414b00-f938-45fd-b698-bac27195c1a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/homeScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/homeScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/video_view_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/video_view_script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +95,8 @@
       <workItem from="1613820679847" duration="83000" />
       <workItem from="1613821402282" duration="129000" />
       <workItem from="1613824924576" duration="218000" />
+      <workItem from="1613832833966" duration="70000" />
+      <workItem from="1613833005570" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="added signIn.html">
       <created>1613226053197</created>

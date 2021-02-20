@@ -57,14 +57,7 @@ function signOut(){
             console.log({data})
         data.forEach(addData)})
         .catch(error => console.log('error', error));
-
-
-
-
-
-
-
-        }
+}
 function addData(data){
     //alert(data.title)
     datalist.push(data);
@@ -95,6 +88,5 @@ function movieSelected(id){
             selectedmovie=datalist[i];
     localStorage.removeItem("selectedMovie")
     localStorage.setItem("selectedMovie",JSON.stringify(selectedmovie))
-    localStorage.setItem("MoviesList",JSON.stringify(datalist))
     open("Video_View.html","_self")
 }
